@@ -1,0 +1,6 @@
+.App{
+    height: 100%;
+}
+.routers{
+    height: calc(100% - 70px);
+}

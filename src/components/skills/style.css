@@ -1,0 +1,120 @@
+.skill-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+.skill-left,.skill-right{
+    width: 50%;
+}
+.skill-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-items{
+    display: flex;
+    flex-direction: column;
+    color: var(--yellow-theme-main-color);
+}
+.skill-items-left{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.value{
+    height: 100%;
+    background-color: rgba(166, 0, 255, 0.489);
+    border-radius: 10px;
+}
+.skill-items-right{
+    width: 80%;
+    height: 7px;
+    background-color: rgb(43, 255, 0);
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+.circle{
+    height: 350px;
+    width: 350px;
+    background: radial-gradient(180px, var(--yellow-theme-main-color),transparent 90%);
+    border: 2px solid var(--yellow-theme-main-color);
+    border-radius: 50%;
+    color: #05ECFC;
+    position: relative;
+    animation: rotation 9s linear infinite;
+    margin: 50px 0;
+}
+.images div:nth-child(1){
+    position: absolute;
+    top: -9%;
+    left: 40%;
+}
+.images div:nth-child(2){
+    position: absolute;
+    left: -8%;
+    top: 37%;
+    color: lime;
+}
+.images div:nth-child(3){
+    position: absolute;
+    left: 40%;
+    bottom: -8%;
+}
+.images div:nth-child(4){
+    position: absolute;
+    top: 37%;
+    right: -7%;
+    color: lime;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+
+@media only screen and (min-width:769px) and (max-width:990px){
+    .circle{
+        height: 300px;
+        width: 300px;
+    }
+    .images div:nth-child(1){
+        top: -10%;
+    }
+    .images div:nth-child(2){
+        left: -9%;
+    }
+    .images div:nth-child(3){
+        bottom: -10%;
+    }
+    .images div:nth-child(4){
+        right: -11%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .skill-list{
+        flex-direction: column-reverse;
+    }
+    .skill-left,.skill-right{
+        width: 100%;
+    }
+    .circle{
+        margin-top: 30px;
+        height: 270px;
+        width: 270px;
+    }
+    .images div:nth-child(1){
+        top: -12%;
+    }
+    .images div:nth-child(2){
+        left: -10%;
+    }
+    .images div:nth-child(3){
+        bottom: -11%;
+    }
+    .images div:nth-child(4){
+        right: -12%;
+    }
+}

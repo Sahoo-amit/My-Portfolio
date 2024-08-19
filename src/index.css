@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;700&family=Libre+Franklin:wght@400;700&display=swap');
+
+
+
+:root{
+    --yellow-theme-background-color: #1d1d1d;
+    --yellow-theme-main-color: #ffdd40;
+    --yellow-theme-sub-text-color: #ffffff;
+    --yellow-theme-nav-background-color: #000000e2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+body{
+    height: 100%;
+    background-color: var(--yellow-theme-background-color);
+}
+html{
+    height: 100%;
+}
+#root{
+    height: 100%;
+}
+

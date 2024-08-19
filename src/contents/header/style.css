@@ -1,0 +1,18 @@
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+    padding: 20px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--yellow-theme-main-color);
+    letter-spacing: 2px;
+    width: 100%;
+}
+span{
+    color: var(--yellow-theme-main-color);
+    font-size: 30px;
+}
